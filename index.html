@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>English Janala</title>
+    <title>English Janala | Best Platform for learning English</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
@@ -45,9 +45,9 @@
                 </div>
             </nav>
         </div>
-        <section class="flex flex-col lg:flex-row items-center w-11/12 mx-auto justify-between">
-            <div class="space-y-6 max-w-[50%]">
-                <h4 class="font-bold text-5xl"><span class="text-[#00BCFF]">English</span> is Easy!!</h4>
+        <section class="flex flex-col-reverse gap-6 lg:flex-row items-center w-11/12 mx-auto justify-between">
+            <div class="space-y-6 max-w-[90%] lg:max-w-[50%] text-center lg:text-left">
+                <h4 class="font-bold text-3xl lg:text-5xl"><span class="text-[#00BCFF]">English</span> is Easy!!</h4>
                 <p class="hind font-medium text-2xl text-[#18181B]">
                     আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা আপনার দক্ষতা বাড়াতে চান, আমাদের
                     Interactive Lessons আপনাকে নিয়ে যাবে অন্য একটি Level এ
@@ -59,10 +59,29 @@
                 </fieldset>
             </div>
             <div>
-                <img src="assets/hero-student.png" alt="hero-student">
+                <img src="assets/hero-student.png" alt="hero-student" class="max-w-[90%] mx-auto">
             </div>
         </section>
     </header>
+    <main class="mt-48">
+        <section class="w-11/12 mx-auto flex flex-col items-center text-center gap-10">
+            <h4 class="font-bold text-2xl lg:text-4xl"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h4>
+            <!-- api lesson -->
+            <ul id="allLesson" class="grid grid-cols-3 gap-2 lg:grid-cols-7">
+                <!-- <li>
+                    <button
+                        class="btn btn-outline text-sm text-[#422AD5] outline-[#422AD5] hover:bg-[#422AD5] hover:text-white">
+                        <i class="fa-solid fa-book-open text-lg"></i>Lesson -1
+                    </button>
+                </li> -->
+            </ul>
+            <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-16 flex flex-col items-center text-center gap-3">
+                <p class="text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
+                <p class="text-3xl">একটি Lesson Select করুন।</p>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 
 </html>
