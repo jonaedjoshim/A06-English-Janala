@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Janala | Best Platform for learning English</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/png">    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,9 +16,9 @@
     <script src="https://kit.fontawesome.com/3cc97d6529.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="poppins">
+<body class="poppins mb-52">
     <header>
-        <div class="bg-[#C6BDBD20] border-b border-[#C6BDBD]" F>
+        <div class="bg-[#C6BDBD20] border-b border-[#C6BDBD]">
             <nav class="py-5 lg:py-6 flex flex-col lg:flex-row items-center gap-6 justify-between w-11/12 mx-auto">
                 <div>
                     <a href="">
@@ -66,18 +66,17 @@
     <main class="mt-48">
         <section class="w-11/12 mx-auto flex flex-col items-center text-center gap-10">
             <h4 class="font-bold text-2xl lg:text-4xl"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h4>
-            <!-- api lesson -->
-            <ul id="allLesson" class="grid grid-cols-3 gap-2 lg:grid-cols-7">
-                <!-- <li>
-                    <button
-                        class="btn btn-outline text-sm text-[#422AD5] outline-[#422AD5] hover:bg-[#422AD5] hover:text-white">
-                        <i class="fa-solid fa-book-open text-lg"></i>Lesson -1
-                    </button>
-                </li> -->
+            <ul id="allLesson" class="flex flex-wrap gap-4 justify-center">
+                <!-- api lesson -->
             </ul>
             <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-16 flex flex-col items-center text-center gap-3">
                 <p class="text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
                 <p class="text-3xl">একটি Lesson Select করুন।</p>
+            </div>
+        </section>
+        <section class="w-11/12 mx-auto mt-10">
+            <div id="wordContainer" class="bg-[#F8F8F8] rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-3 gap-7">
+               <!-- fetch api -->
             </div>
         </section>
     </main>
