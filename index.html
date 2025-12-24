@@ -18,7 +18,7 @@
 </head>
 
 <body class="poppins">
-    <header>
+    <header class="mb-10">
         <div class="bg-[#C6BDBD20] border-b border-[#C6BDBD]">
             <nav class="py-5 lg:py-6 flex flex-col lg:flex-row items-center gap-6 justify-between w-11/12 mx-auto">
                 <div>
@@ -30,16 +30,16 @@
                         </p>
                     </a>
                 </div>
-                <div class="space-x-4 hidden lg:inline-flex">
-                    <button
+                <div class="space-x-4 flex items-center">
+                    <button id="faq"
                         class="btn btn-outline text-sm text-[#422AD5] outline-[#422AD5] hover:bg-[#422AD5] hover:text-white">
                         <i class="fa-solid fa-circle-question text-lg"></i>FAQ
                     </button>
-                    <button
+                    <button id="learn"
                         class="btn btn-outline text-sm text-[#422AD5] outline-[#422AD5] hover:bg-[#422AD5] hover:text-white">
                         <i class="fa-solid fa-book-open text-lg"></i>Learn
                     </button>
-                    <button
+                    <button id="logout"
                         class="btn btn-outline text-sm text-[#422AD5] outline-[#422AD5] hover:bg-[#422AD5] hover:text-white">
                         <i class="fa-solid fa-arrow-right-from-bracket text-lg"></i>Logout
                     </button>
@@ -64,25 +64,25 @@
             </div>
         </section>
     </header>
-    <main class="mt-48">
-        <section class="w-11/12 mx-auto flex flex-col items-center text-center gap-10">
+    <main class="hidden">
+        <section id="select" class="w-11/12 mx-auto flex flex-col items-center text-center gap-10">
             <h4 class="font-bold text-2xl lg:text-4xl"><span class="text-[#00BCFF]">Let's</span> Learn Vocabularies</h4>
             <ul id="allLesson" class="flex flex-wrap gap-4 justify-center">
                 <!-- api lesson -->
             </ul>
-            <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-16 flex flex-col items-center text-center gap-3">
+            <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-10 lg:p-16 flex flex-col items-center text-center gap-3">
                 <p class="text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
-                <p class="text-3xl">একটি Lesson Select করুন।</p>
+                <p class="text-2xl lg:text-3xl">একটি Lesson Select করুন।</p>
             </div>
         </section>
-        <section class="w-11/12 mx-auto mt-10">
-            <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-16 flex flex-col items-center text-center gap-3">
+        <section id="empty" class="w-11/12 mx-auto mt-10 hidden">
+            <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-10 lg:p-16 flex flex-col items-center text-center gap-3">
                 <img src="assets/alert-error.png" alt="alert">
-                <p class="text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
-                <p class="text-3xl">একটি Lesson Select করুন।</p>
+                <p class="text-sm text-[#79716B]">এই Lesson এ এখনো কোন Vocabulary যুক্ত করা হয়নি।</p>
+                <p class="text-2xl lg:text-3xl">নেক্সট Lesson এ যান</p>
             </div>
         </section>
-        <section class="w-11/12 mx-auto mt-10">
+        <section class="w-11/12 mx-auto mt-10 hidden">
             <div id="wordContainer" class="bg-[#F8F8F8] rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-3 gap-7">
                 <!-- fetch api -->
             </div>
@@ -125,7 +125,7 @@
                 <input type="radio" name="my-accordion-3" />
                 <div class="collapse-title font-semibold">3. Do I need to create an account?
                 </div>
-                <div class="collapse-content text-sm">No, you don’t need an account to use this website, but creating
+                <div class="collapse-content text-sm">Yes, you need an account to use this website, because creating
                     one lets you personalize settings and save progress.
                 </div>
             </div>
@@ -145,8 +145,8 @@
             </div>
         </section>
     </main>
-    <footer class="mt-48 border-t border-[#FFEBEB] py-24">
-        <section class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between items-center">
+    <footer class="mt-20 lg:mt-48 border-t border-[#FFEBEB] py-10 lg:py-24 hidden">
+        <section class="w-11/12 mx-auto flex justify-between items-center">
             <div class="space-y-5">
                 <div>
                     <p class="flex items-center">
@@ -155,17 +155,17 @@
                         <span class="bangla font-medium text-xl">জানালা</span>
                     </p>
                 </div>
-                <div>
-                    <p class="hind font-medium text-xl">ইংরেজি শিখুন সহজে</p>
-                    <p class="hind text-base">Providing ED-Tech Applications since 2025</p>
+                <div class="w-[80%] lg:w-fit">
+                    <p class="hind font-medium text-base lg:text-xl">ইংরেজি শিখুন সহজে</p>
+                    <p class="hind text-sm lg:text-base">Providing ED-Tech Applications since 2025</p>
                 </div>
             </div>
             <div class="space-y-4">
                 <h4 class="font-semibold text-xl text-[#18181B]">Follow us</h4>
                 <div>
-                    <a href=""><i class="fa-brands fa-facebook font-medium text-2xl text-[#18181B]"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube font-medium text-2xl text-[#18181B]"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram font-medium text-2xl text-[#18181B]"></i></a>
+                    <a href=""><i class="fa-brands fa-facebook font-medium text-lg lg:text-2xl text-[#18181B]"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube font-medium text-lg lg:text-2xl text-[#18181B]"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram font-medium text-lg lg:text-2xl text-[#18181B]"></i></a>
                 </div>
             </div>
         </section>
