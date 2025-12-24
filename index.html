@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Janala | Best Platform for learning English</title>
-    <link rel="shortcut icon" href="assets/logo.png" type="image/png">    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -76,8 +77,48 @@
         </section>
         <section class="w-11/12 mx-auto mt-10">
             <div id="wordContainer" class="bg-[#F8F8F8] rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-3 gap-7">
-               <!-- fetch api -->
+                <!-- fetch api -->
             </div>
+        </section>
+        <section>
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="modal" class="modal">
+                <div class="modal-box rounded-xl">
+                    <div id="detailsContainer" class="space-y-8">
+                        <!-- <h3 class="text-3xl font-semibold">
+                            Eager (<i class="fa-solid fa-microphone-lines"></i>:ইগার)
+                        </h3>
+                        <div class="space-y-3">
+                            <h5 class="font-semibold text-xl">Meaning</h5>
+                            <p class="hind font-medium text-lg">আগ্রহী</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h5 class="font-semibold text-xl">Example</h5>
+                            <p class="font-normal text-lg">The kids were eager to open their gifts.</p>
+                        </div>
+                        <div class="space-y-3">
+                            <h5 class="hind font-medium text-xl">সমার্থক শব্দ গুলো</h5>
+                            <div class="flex justify-around">
+                                <div class="bg-[#EDF7FF] px-5 py-1 rounded-md">
+                                    <p class="text-lg">Enthusiastic</p>
+                                </div>
+                                <div class="bg-[#EDF7FF] px-5 py-1 rounded-md">
+                                    <p class="text-lg">excited</p>
+                                </div>
+                                <div class="bg-[#EDF7FF] px-5 py-1 rounded-md">
+                                    <p class="text-lg">keen</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="modal-action w-[50%] bg-[#422AD5] rounded-lg px-9 py-1">
+                        <form method="dialog" class="w-full">
+                            <button
+                                class="btn border-none shadow-none w-full bg-[#422AD5] text-white font-medium text-xl">Close</button>
+                        </form>
+                    </div>
+                </div>
+            </dialog>
         </section>
     </main>
     <script src="script.js"></script>
