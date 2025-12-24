@@ -17,7 +17,7 @@
     <script src="https://kit.fontawesome.com/3cc97d6529.js" crossorigin="anonymous"></script>
 </head>
 
-<body class="poppins mb-52">
+<body class="poppins">
     <header>
         <div class="bg-[#C6BDBD20] border-b border-[#C6BDBD]">
             <nav class="py-5 lg:py-6 flex flex-col lg:flex-row items-center gap-6 justify-between w-11/12 mx-auto">
@@ -76,6 +76,13 @@
             </div>
         </section>
         <section class="w-11/12 mx-auto mt-10">
+            <div class="hind bg-[#F8F8F8] w-full rounded-3xl p-16 flex flex-col items-center text-center gap-3">
+                <img src="assets/alert-error.png" alt="alert">
+                <p class="text-sm text-[#79716B]">আপনি এখনো কোন Lesson Select করেন নি</p>
+                <p class="text-3xl">একটি Lesson Select করুন।</p>
+            </div>
+        </section>
+        <section class="w-11/12 mx-auto mt-10">
             <div id="wordContainer" class="bg-[#F8F8F8] rounded-3xl p-8 grid grid-cols-1 lg:grid-cols-3 gap-7">
                 <!-- fetch api -->
             </div>
@@ -85,31 +92,7 @@
             <dialog id="modal" class="modal">
                 <div class="modal-box rounded-xl">
                     <div id="detailsContainer" class="space-y-8">
-                        <!-- <h3 class="text-3xl font-semibold">
-                            Eager (<i class="fa-solid fa-microphone-lines"></i>:ইগার)
-                        </h3>
-                        <div class="space-y-3">
-                            <h5 class="font-semibold text-xl">Meaning</h5>
-                            <p class="hind font-medium text-lg">আগ্রহী</p>
-                        </div>
-                        <div class="space-y-3">
-                            <h5 class="font-semibold text-xl">Example</h5>
-                            <p class="font-normal text-lg">The kids were eager to open their gifts.</p>
-                        </div>
-                        <div class="space-y-3">
-                            <h5 class="hind font-medium text-xl">সমার্থক শব্দ গুলো</h5>
-                            <div class="flex justify-around">
-                                <div class="bg-[#EDF7FF] px-5 py-1 rounded-md">
-                                    <p class="text-lg">Enthusiastic</p>
-                                </div>
-                                <div class="bg-[#EDF7FF] px-5 py-1 rounded-md">
-                                    <p class="text-lg">excited</p>
-                                </div>
-                                <div class="bg-[#EDF7FF] px-5 py-1 rounded-md">
-                                    <p class="text-lg">keen</p>
-                                </div>
-                            </div>
-                        </div> -->
+                        <!-- api fetcthing -->
                     </div>
                     <div class="modal-action w-[50%] bg-[#422AD5] rounded-lg px-9 py-1">
                         <form method="dialog" class="w-full">
@@ -120,7 +103,73 @@
                 </div>
             </dialog>
         </section>
+        <section class="w-11/12 mx-auto flex flex-col items-center gap-5 mt-10">
+            <h4 class="font-bold text-2xl lg:text-4xl"><span class="text-[#00BCFF]">Frequently</span> Asked Questions
+            </h4>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" checked="checked" />
+                <div class="collapse-title font-semibold">1. How can I start learning English on this website?</div>
+                <div class="collapse-content text-sm">You can start by chatting with me in English—ask questions,
+                    practice sentences, and I’ll correct or guide you. I can also create short quizzes, vocabulary
+                    lists, or bilingual explanations (Bangla ↔ English) to help you learn step by step.
+                    .</div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">2. Is this website free to use?</div>
+                <div class="collapse-content text-sm">Yes, you can use this website for free. All features I offer here
+                    are available at no cost.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">3. Do I need to create an account?
+                </div>
+                <div class="collapse-content text-sm">No, you don’t need an account to use this website, but creating
+                    one lets you personalize settings and save progress.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">4.How can I build my English vocabulary?</div>
+                <div class="collapse-content text-sm">Read a little every day, note new words, and practice them in
+                    sentences. Using flashcards or quizzes also helps reinforce memory.
+                </div>
+            </div>
+            <div class="collapse collapse-plus bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-3" />
+                <div class="collapse-title font-semibold">5. Do you offer certificates for completed courses?</div>
+                <div class="collapse-content text-sm">No, I don’t offer certificates for completed courses. I can help
+                    you learn and practice, but not issue formal certification.
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="mt-48 border-t border-[#FFEBEB] py-24">
+        <section class="w-11/12 mx-auto flex flex-col lg:flex-row justify-between items-center">
+            <div class="space-y-5">
+                <div>
+                    <p class="flex items-center">
+                        <span class="font-semibold text-xl">English</span>
+                        <img src="assets/logo.png" alt="logo" class="size-10">
+                        <span class="bangla font-medium text-xl">জানালা</span>
+                    </p>
+                </div>
+                <div>
+                    <p class="hind font-medium text-xl">ইংরেজি শিখুন সহজে</p>
+                    <p class="hind text-base">Providing ED-Tech Applications since 2025</p>
+                </div>
+            </div>
+            <div class="space-y-4">
+                <h4 class="font-semibold text-xl text-[#18181B]">Follow us</h4>
+                <div>
+                    <a href=""><i class="fa-brands fa-facebook font-medium text-2xl text-[#18181B]"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube font-medium text-2xl text-[#18181B]"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram font-medium text-2xl text-[#18181B]"></i></a>
+                </div>
+            </div>
+        </section>
+    </footer>
     <script src="script.js"></script>
 </body>
 
